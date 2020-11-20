@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="query.css">
+    <!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>faria</title>
+</head>
+<body>
+<section class="myform">
+    <div class="container">
+        <h1 class="brand"><span>Query</span> or Complain</h1>
+        <div class="wrapper">
+          <div class="PreviousComment">
+            <h3>Comment Section</h3>
+           
+          </div>
+          <div class="contact">
+            <h3>Your Query Or Complain</h3>
+            <div class="alert">Your message has been sent</div>
+            <form id="contactForm">
+              <p>
+                <label>Name</label>
+                <input type="text" name="name" id="name" required>
+              </p>
+             
+              <p>
+                <label>Email Address</label>
+                <input type="email" name="email" id="email" required>
+              </p>
+             
+              <p class="full">
+                <label>Message</label>
+                <textarea name="message" rows="5" id="message"></textarea>
+              </p>
+              <p class="full">
+                <button type="submit">Submit</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+</section>
+    <!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyASQ6bpV3r749cYX5Y0EDLXsHWC7WTm070",
+    authDomain: "contact-72259.firebaseapp.com",
+    databaseURL: "https://contact-72259.firebaseio.com",
+    projectId: "contact-72259",
+    storageBucket: "contact-72259.appspot.com",
+    messagingSenderId: "739509293525",
+    appId: "1:739509293525:web:ff310ad9ce977be8a9ed5c",
+    measurementId: "G-2BEQRH8ND1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+
+
+<script src="main.js"></script>
+</body>
+</html>
